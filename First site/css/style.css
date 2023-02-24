@@ -3,18 +3,33 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
 .container {
     margin: 0px 80px;
 }
-
 .header {
+    background: #232536;
+    height: 80px;
+    z-index: 2;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.intro {
     background: url(../img/1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden; /*убрать отступ сверху экрана*/
-    background-color: #232536;
+    
+
     
 }
 .header_logo {
@@ -24,6 +39,11 @@ html, body {
     display: flex; /*размещение в строку*/
     align-items: center; /*выравнивание по центру относительно первого элемента*/
     justify-content: space-between; /*разместить элементы на расстоянии*/
+}
+.nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 .nav_item {
     color: #fff;
@@ -42,10 +62,184 @@ html, body {
     color: #232536;
     text-decoration: none;
     padding: 16px 48px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
 
     transition: background-color 0.2s linear;
 
 }
 .button:hover {
     background-color: #FFD050;
+}
+.header_down{
+    margin-top: 128px;
+}
+.subtitle_header{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.title_header {
+    font-family: 'Sen', sans-serif;
+    font-size: 56px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.subtext_header {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.text_title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.button_header {
+    background-color: #FFD050;
+    color: #232536;
+    text-decoration: none;
+    padding: 16px 48px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
+    
+
+    transition: background-color 0.2s linear;
+}
+.button_header:hover{
+    background-color: #FFFFFF;
+}
+.first_section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+} 
+.section_fill{
+    display: flex;  
+    justify-content: space-between;
+}
+.block_1 {
+ 
+}
+.section_header_1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Sen', sans-serif;
+    color: #232536;
+    letter-spacing: -2px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.border_block_1 {
+    outline: 1px solid #6D6E76;
+    outline-offset: 32px;
+    outline-color:rgba(205, 214, 219, 0.3); 
+}
+.subtitle_block_1 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #232536;
+    margin-top: 32px;
+}
+.title_text_block_1 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Sen', sans-serif;
+    color: #232536;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+.text_block_1 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #232536;
+    margin-bottom: 32px;
+}
+.button_block_1 {
+    background-color: #FFD050;
+    color: #232536;
+    text-decoration: none;
+    padding: 16px 48px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
+}
+.block_2 {
+    max-width: 517px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.section_header_2 {
+    display: flex;      
+    flex-direction: column;
+    
+}
+.title_block_2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Sen', sans-serif;
+    color: #232536;
+    letter-spacing: -2px;
+    margin-top: 0;
+    
+}
+.subblock_1 {
+    height: 181px;
+    width: 517px;
+}
+.subtitle_block_2 {
+    color: #592EA9;
+}
+.subtext_1 {
+    color: #232536;
+}
+.text_1 {
+    color: #232536;
+}
+.subblock_2 {
+    height: 181px;
+    width: 517px;
+}
+.subtitle_block_2 {
+    color: #592EA9;
+}
+.subtext_2 {
+    background-color: #FBF6EA;
+    color: #232536;
+}
+.text_2 {
+    color: #232536;
+}
+.subblock_3 {
+    height: 181px;
+    width: 517px;
+}
+.subtitle_block_3 {
+    color: #592EA9;
+}
+.subtext_3 {
+    color: #232536;
+}
+.text_3 {
+    color: #232536;
+}
+.subblock_4 {
+    height: 181px;
+    width: 517px;
+}
+.subtitle_block_4 {
+    color: #592EA9;
+}
+.subtext_4 {
+    color: #232536;
+}
+.text_4 {
+    color: #232536;
 }
